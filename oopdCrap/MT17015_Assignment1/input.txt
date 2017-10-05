@@ -1,0 +1,10 @@
+insert himanshu aggarwal maths, science, eng
+show
+insert abhinav bhargav eng, hindi
+insert vaibhav garg sci, eng
+show
+maximum
+extract-max
+show
+delete himanshu aggarwal
+show

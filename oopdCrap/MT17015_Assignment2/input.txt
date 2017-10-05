@@ -1,0 +1,21 @@
+adds himanshu 11 Mtech 3
+addp rama english
+addp lara hindi
+showp lara
+addc english 2 rama Mtech 3 hindi
+addc hindi 2 lara nan 0 nan
+showc hindi
+shows himanshu
+enroll english himanshu
+shows himanshu
+enroll hindi himanshu
+shows himanshu
+enroll english himanshu
+shows himanshu
+adds mohan 11 Mtech 3
+adds ramesh 11 Mtech 3
+enroll hindi ramesh
+enroll hindi mohan
+showc hindi
+modify hindi 1 newp
+showc hindi
