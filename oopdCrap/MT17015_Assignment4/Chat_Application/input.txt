@@ -1,0 +1,31 @@
+ADDU himanshu 1234 delhi
+ADDA admin 3456 del
+ADDA admin2 564 delhi
+CREATE-GROUP mtech-2017 admin
+SHOW-GROUPS
+CREATE-GROUP mtech-2016 admin2
+SHOW-GROUPS
+ADD-REQUEST himanshu mtech-2017 admin
+SHOW-GROUPS
+ADDU ashutosh 789 delhi
+ADD-REQUEST ashutosh mtech-2016 admin2
+SHOW-GROUPS
+SHOW-PENDING-REQUESTS admin
+ACCEPT-REQUEST admin mtech-2017 himanshu
+SHOW-GROUPS
+SHOW-PENDING-REQUESTS admin2
+ACCEPT-REQUEST admin mtech-2016 ashutosh
+SHOW-GROUPS
+ADDU himanshu 34324 delll
+ADDA admin 34324 delll
+SHOW-USERS
+SHOW-ADMINS
+SHOW-PENDING-REQUESTS admin
+DELETE-GROUP mtech-2016 admin2
+ADD-REQUEST ashutosh mtech-2016 admin2
+SEND-MESSAGE himanshu mtech-2017 admin hellloooooooooo
+SEND-MESSAGE admin mtech-2017 admin hakuna matata
+SEND-MESSAGE himanshu mtech-2017 admin timon pumba
+SHOW-MESSAGE admin mtech-2017 admin
+LEAVE-GROUP himanshu mtech-2017 admin
+SHOW-GROUPS
