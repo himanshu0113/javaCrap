@@ -10,6 +10,7 @@ class Rock{
     this.name = "rock";
     this.rand = new Random();
     this.setstrength();
+      System.out.println("Initial rock: " + this.getstrength());
   }
   private void setstrength()
   {
@@ -39,21 +40,24 @@ class Rock{
     {
       int s1 = this.strength;
       int s2 = ((Rock)w).getstrength();
-
+        System.out.println("Strength1: " + s1);
+        System.out.println("Strength2: " + s2);
       return compare(s1,s2);
     }
     else if(Paper.class.isInstance(w))
     {
       int s1 = this.strength/2;
       int s2 = ((Paper)w).getstrength()*2;
-
+        System.out.println("Strength1: " + s1);
+        System.out.println("Strength2: " + s2);
       return compare(s1,s2);
     }
     else    //scissors
     {
       int s1 = this.strength*2;
       int s2 = ((Scissors)w).getstrength()/2;
-
+        System.out.println("Strength1: " + s1);
+        System.out.println("Strength2: " + s2);
       return compare(s1,s2);
     }
   }
@@ -69,6 +73,7 @@ class Paper{
     this.name = "paper";
     this.rand = new Random();
     this.setstrength();
+      System.out.println("Initial paper: " + this.getstrength());
   }
   public void setstrength()
   {
@@ -98,21 +103,24 @@ class Paper{
     {
       int s1 = this.strength;
       int s2 = ((Paper)w).getstrength();
-
+        System.out.println("Strength1: " + s1);
+        System.out.println("Strength2: " + s2);
       return compare(s1,s2);
     }
     else if(Rock.class.isInstance(w))
     {
       int s1 = this.strength*2;
       int s2 = ((Rock)w).getstrength()/2;
-
+        System.out.println("Strength1: " + s1);
+        System.out.println("Strength2: " + s2);
       return compare(s1,s2);
     }
     else    //scissors
     {
       int s1 = this.strength/2;
       int s2 = ((Scissors)w).getstrength()*2;
-
+        System.out.println("Strength1: " + s1);
+        System.out.println("Strength2: " + s2);
       return compare(s1,s2);
     }
   }
@@ -128,6 +136,7 @@ class Scissors{
     this.name = "scissors";
     this.rand = new Random();
     this.setstrength();
+      System.out.println("Initial sci: " + this.getstrength());
   }
   public void setstrength()
   {
@@ -157,21 +166,24 @@ class Scissors{
     {
       int s1 = this.strength;
       int s2 = ((Scissors)w).getstrength();
-
+        System.out.println("Strength1: " + s1);
+        System.out.println("Strength2: " + s2);
       return compare(s1,s2);
     }
     else if(Paper.class.isInstance(w))
     {
       int s1 = this.strength*2;
       int s2 = ((Paper)w).getstrength()/2;
-
+        System.out.println("Strength1: " + s1);
+        System.out.println("Strength2: " + s2);
       return compare(s1,s2);
     }
     else    //Rock
     {
       int s1 = this.strength/2;
       int s2 = ((Rock)w).getstrength()*2;
-
+        System.out.println("Strength1: " + s1);
+        System.out.println("Strength2: " + s2);
       return compare(s1,s2);
     }
   }
@@ -233,8 +245,9 @@ public class War{
       Object w2 = war.t2.selectWeapon();
       for(int j=0; j<3; j++)
       {
-        //System.out.println(w1);
-        //System.out.println(w2);
+          System.out.println("Round: " + (j+1));
+        System.out.println(w1);
+        System.out.println(w2);
         winner = war.battle(w1,w2);
         if(winner == 1)
           winner1++;

@@ -246,7 +246,7 @@ class Course{
   public void setstud_enrolled(String st)
   {
     this.stu_count++;
-    System.out.println(this.stu_count);
+    //System.out.println(this.stu_count);
 	  this.stud_enrolled.add(st);
   }
 
@@ -478,44 +478,54 @@ public class course_management{
         }
         else if(s.toLowerCase().compareTo("shows") == 0)
         {
+            Boolean flag = false;
         	String name = in.next().toLowerCase();
         	for(Student st : manager.stud)
         	{
         		if(st.getname().compareTo(name) == 0)
         		{
+                    flag = true;
         			st.showStudent();
         			continue;
         		}
-        		System.out.println("---->Student name not found.");
         	}
+            if(!flag)
+                System.out.println("---->Student name not found.");
           System.out.println("--------------------------------");
         }
         else if(s.toLowerCase().compareTo("showp") == 0)
         {
+            Boolean flag = false;
         	String name = in.next().toLowerCase();
         	for(Professor pf : manager.profs)
         	{
         		if(pf.getname().compareTo(name) == 0)
         		{
+                    flag = true;
         			pf.showProf();
         			continue;
         		}
-        		System.out.println("---->Professor name not found.");
         	}
+            if(!flag)
+                System.out.println("---->Professor name not found.");
           System.out.println("--------------------------------");
         }
         else if(s.toLowerCase().compareTo("showc") == 0)
         {
+            Boolean flag = false;
         	String name = in.next().toLowerCase();
         	for(Course c : manager.courses)
         	{
         		if(c.getname().compareTo(name) == 0)
         		{
+                    flag = true;
         			c.showCourse();
         			continue;
         		}
         	}
-          System.out.println("--------------------------------");
+            if(!flag)
+                System.out.println("---->Course name not found.");
+            System.out.println("--------------------------------");
         }
       }
     }

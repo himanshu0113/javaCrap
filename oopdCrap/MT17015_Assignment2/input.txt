@@ -17,5 +17,6 @@ adds ramesh 11 Mtech 3
 enroll hindi ramesh
 enroll hindi mohan
 showc hindi
+showp lara
 modify hindi 1 newp
-showc hindi
+showp lara
